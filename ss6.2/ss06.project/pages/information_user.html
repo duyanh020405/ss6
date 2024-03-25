@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Styling for form elements */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 5px;
+    }
+
+    /* Styling for header */
+    .header_infor {
+      border: solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .header_infor img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .header_infor h1 {
+      font-size: xxx-large;
+      color: black;
+    }
+
+    .header_infor h3 {
+      color: rgba(4, 0, 0, 0.798);
+    }
+
+    .header_infor .in {
+      color: black;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .header_infor .in:hover {
+      text-decoration: underline;
+    }
+
+    .header_infor button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .header_infor button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Dang ki thong tin</h1>
+  <form>
+    <label for="name1">First name :</label>
+    <input id="name1" type="text" placeholder="nhap tai khoan" required>
+    <label for="name2">Last name :</label>
+    <input id="name2" type="text" placeholder="nhap tai khoan" required>
+    <label for="address">Address :</label>
+    <input type="text" id="address">
+    <label for="sex">Sex :</label>
+<select id="sex">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="other">Other</option>
+</select>
+
+    <label for="gmail">Gmail :</label>
+    <input type="text" id="gmail">
+    <button onclick="luuUser()">Gửi thông tin !</button>
+  </form>
+  <div id="userInfo"></div>
+  <script src="/ss06.project/js/luuUser.js"></script>  
+</body>
+</html>

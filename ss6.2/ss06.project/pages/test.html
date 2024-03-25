@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giỏ hàng</title>
+</head>
+<body>
+
+<div id="cart"></div>
+
+<script>
+    // Lấy dữ liệu từ local storage
+    var cartItems = localStorage.getItem('cartItems');
+    cartItems = cartItems ? JSON.parse(cartItems) : [];
+
+    // Hiển thị thông tin trong giỏ hàng
+    var cartDiv = document.getElementById('cart');
+    cartDiv.innerHTML = '<h2>Giỏ hàng</h2>';
+
+    if (cartItems.length === 0) {
+        cartDiv.innerHTML += '<p>Giỏ hàng của bạn đang trống.</p>';
+    } else {
+        cartDiv.innerHTML += '<ul>';
+        cartItems.forEach(function(item) {
+            cartDiv.innerHTML += '<li>' + item.name + ' - ' + item.price + '</li>';
+        });
+        cartDiv.innerHTML += '</ul>';
+    }
+</script>
+
+</body>
+</html>
+

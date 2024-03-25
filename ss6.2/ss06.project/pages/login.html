@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Store</title>
+</head>
+<link rel="stylesheet" href="/ss06.project/style/login.css">
+<body>
+    <header id="dangnhap" class="header_infor" style="border: solid black">
+    <div>
+      <img
+        class="icon"
+        src="/ss06.project/asset/doge-meme-icon-free-vector.jpg"
+        alt=""
+      />
+      <h3>DOG OVER SIZE</h3>
+    </div>
+    <div>
+      <h1 style="font-size: xxx-large">Cửa Hàng Thú Cưng</h1>
+      <h3 style="color: white">Uy tin - Chat luong - Dang yeu</h3>
+    </div>
+
+    <div>
+      <a class="in" style="color: black" href="./pages/login.html"
+        >Đăng nhập</a
+      >
+      <a class="in" style="color: black" href="/ss06.project/pages/register.html"
+        >Đăng kí</a
+      >
+      <a class="in" style="color: black" href="/ss06.project/utils/index.html">
+        Trang chu
+      </a>
+    </div>
+  </header>
+    <!--
+
+
+    -->
+    <form onsubmit="dangnhap(event)">
+        <h2>Tai khoan :</h2>
+                <input id="tk1" type="text" placeholder="nhap tai khoan" required />
+                <h2>Mat khau</h2>
+                <input id="mk1" type="text" placeholder="nhap mat khau" required/>
+                <input type="submit" onclick="dangnhap()">
+      </form>
+      <script>
+        function dangnhap(event){
+            event.preventDefault();
+            var tk = document.getElementById("tk1").value;
+            var mk = document.getElementById("mk1").value;
+            var check = localStorage.getItem(tk)
+            if(check === null){
+                alert("tài khoản không tồn tại")
+                window.location.href = "/ss06.project/pages/register.html";
+                return;
+            }
+            else if(check !== check){
+                alert("nhap mật khẩu sai , vui lòng nhập lại")
+            }
+            else{
+                alert("đăng nhập thành công !")
+                window.location.href = "/ss06.project/utils/index.html";
+                console.log(name)
+                
+            }
+        }
+      </script>
+</body>
+</html>

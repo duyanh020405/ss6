@@ -1,0 +1,259 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    color: #0a0303;
+    text-shadow: 1px 1px 1px #251313;
+    background-image: linear-gradient(135deg, #e0e80900 10%, #d0f6106b 100%);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+h3, p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #120f0f;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px 0 #f8f80b3b;
+}
+
+button:hover {
+    cursor: pointer;
+}
+/* Tim kiem - button to find */
+/* main */
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Istok Web", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #212121;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #45433f;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "CORSAIR";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: rgb(14, 4, 4);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: rgba(161, 148, 148, 0);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #af8787;
+  text-decoration: none;
+  background: #ebeb06;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+.inf{
+    position: relative;
+    color: black;
+
+}
+.mouse {
+  height: 300px;
+  width: auto;
+}
+.past1{
+    display: flex;
+    flex-direction:row;
+    gap: 100px;
+}
+/* header1  */
+.navbar-dark .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.fa-li {
+  position: relative;
+  left: 0;
+} 
+.navbar-dark {
+  width: 100%;
+}
+
+
+
+/* Tùy chỉnh kích thước và khoảng cách */
+.header {
+  padding: 50px;
+}
+
+.card {
+  margin: 20px;
+}
+
+/* Hiệu ứng hover và transition */
+.button,
+.card,
+.contentBox {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover,
+.card:hover,
+.contentBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Tạo hiệu ứng parallax cho header */
+.header {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Thêm hiệu ứng overlay cho hình nền */
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Điều chỉnh mức độ mờ tùy ý */
+}
+
+/* Thêm hiệu ứng parallax cho header */
+.header {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

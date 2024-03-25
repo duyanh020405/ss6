@@ -1,0 +1,74 @@
+/* CSS cho phần Header */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header_infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .header_infor img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .header_infor h1 {
+    margin: 0;
+  }
+  
+  .header_infor h3 {
+    margin: 5px 0;
+  }
+  
+  .header_infor a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+  }
+  
+  .header_infor button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .header_infor button:hover {
+    background-color: #45a049;
+  }
+  
+  /* CSS cho phần Information */
+  .information {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .information h1 {
+    font-size: 24px;
+  }
+  
+  .information h2 {
+    font-size: 16px;
+  }
+  
+  .information img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
